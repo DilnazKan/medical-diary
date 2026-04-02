@@ -1,0 +1,22 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Uploads (user files — never commit)
+backend/uploads/
+
+# Node
+node_modules/
+.expo/
+
+# Mac
+.DS_Store
