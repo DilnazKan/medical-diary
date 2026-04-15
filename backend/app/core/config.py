@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     SECRET_KEY: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    SUPABASE_URL: str
+    SUPABASE_SERVICE_KEY: str
 
     class Config:
         env_file = str(ENV_FILE)
