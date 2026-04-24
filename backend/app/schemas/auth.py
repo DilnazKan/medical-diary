@@ -1,5 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from datetime import date
+from uuid import UUID
 
 class RegisterRequest(BaseModel):
     email: EmailStr
@@ -16,7 +17,7 @@ class TokenResponse(BaseModel):
     token_type: str = "bearer"
 
 class UserResponse(BaseModel):
-    id: str
+    id: UUID
     email: str
     full_name: str | None
 
